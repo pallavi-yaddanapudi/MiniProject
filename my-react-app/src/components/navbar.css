@@ -16,6 +16,7 @@
     font-size: 22px;
     font-weight: bold;
   }
+ 
   
   .nav-links {
     list-style: none;
@@ -142,4 +143,25 @@
 }
 .logout-btn:hover {
   border:1px solid white;
+}
+/* Logo container */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Icon image styling */
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  object-fit: contain;
+  
+}
+
+/* Optional: Adjust heading spacing */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
 }

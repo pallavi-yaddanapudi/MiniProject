@@ -5,6 +5,8 @@ const adminRoutes = require("./routes/adminRoutes");
 const agentRoutes = require("./routes/agentRoutes");
 const donorRoutes = require("./routes/donorRoutes");
 const userRoutes = require("./routes/user.js");
+const donationRoutes = require("./routes/donations.js");
+
 const cors = require('cors');
 
 dotenv.config(); // Load environment variables
@@ -33,6 +35,7 @@ app.use("/admin", adminRoutes);
 app.use("/agent", agentRoutes);
 app.use("/donor", donorRoutes);
 app.use("/",userRoutes);
+app.use("/",donationRoutes);
 
 // Default Route
 app.get("/", (req, res) => {

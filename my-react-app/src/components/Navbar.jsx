@@ -14,7 +14,10 @@ function Navbar() {
   };
   return (
     <nav className="navbar">
-      <h1 className="logo">Food Donation</h1>
+      <div className="navbar-logo">
+        <img src="./Donation.png" alt="Donation Logo" className="logo-icon" />
+        <h1 className="logo">Smart Donation System</h1>
+      </div>
       <ul className="nav-links">
         {!token ? ( // Show Signup and Login only if user is not logged in
           <>
@@ -27,7 +30,9 @@ function Navbar() {
           </>
         ) : (
           <li>
-            <button onClick={handleLogout} className="logout-btn">Logout</button>
+            <button onClick={handleLogout} className="logout-btn">
+              Logout
+            </button>
           </li>
         )}
       </ul>

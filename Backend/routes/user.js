@@ -28,7 +28,7 @@ router.post("/signup", async (req, res) => {
     } else if (role === "donor") {
       user = new Donor({ username, password: hashedPassword, role });
     } else {
-      return res.status(400).json({ message: "Invalid role" });
+      return res.status(400).json({ message: "Inva font-weight: bold;lid role" });
     }
 
     await user.save();

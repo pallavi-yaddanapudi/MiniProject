@@ -6,7 +6,7 @@ function Footer() {
     <div style={{marginTop:"4px"}}>
       <footer className="footer">
         <div className="footer-content">
-          <p className="company-name">Food Donation Pvt. Ltd.</p>
+          <p className="company-name">Smart Donation System Pvt. Ltd.</p>
 
           <div className="social-icons">
             <a
