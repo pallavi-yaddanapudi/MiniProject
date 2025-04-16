@@ -4,7 +4,7 @@ import "./Corousel.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 const  Corousel = () => {
   return (
-    <div style={{marginTop:"72px"}}>
+    <div style={{marginTop:"72px",marginBottom:"4px"}}>
        <div className="carousel-container">
         <Carousel 
           autoPlay 

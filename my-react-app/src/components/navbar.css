@@ -165,3 +165,17 @@
   font-weight: bold;
   margin: 0;
 }
+
+.nav-btn {
+  color: white;
+  background: none;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  border: 1px solid white;
+}

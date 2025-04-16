@@ -10,6 +10,7 @@ import DonorDashboard from './components/DonorDashboard.jsx';
 import AdminDashboard from './components/AdminDashboard.jsx';
 import AgentDashboard from './components/AgentDashboard.jsx';
 import DonationForm from './components/DonationForm.jsx';
+import PreviousDonations from './components/PreviousDonations.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,8 @@ const router = createBrowserRouter([
       {path:'/admin-dashboard',element:<AdminDashboard/>},
       {path:'/donor-dashboard',element:<DonorDashboard/>},
       {path:'/agent-dashboard',element:<AgentDashboard/>},
-      {path:"/donation",element:<DonationForm/>}
+      {path:"/donation",element:<DonationForm/>},
+      {path:"/previous-donations",element:<PreviousDonations/>}
 
     ],
   },

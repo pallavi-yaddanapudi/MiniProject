@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./Footer.css";
 function Footer() {
   return (
-    <div style={{marginTop:"4px"}}>
+    <div>
       <footer className="footer">
         <div className="footer-content">
           <p className="company-name">Smart Donation System Pvt. Ltd.</p>

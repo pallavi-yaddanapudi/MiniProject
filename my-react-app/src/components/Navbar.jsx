@@ -12,6 +12,11 @@ function Navbar() {
     localStorage.removeItem("id");
     navigate("/"); // Redirect to home page
   };
+
+  const goToPreviousDonations = () => {
+    navigate("/previous-donations");
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -19,7 +24,7 @@ function Navbar() {
         <h1 className="logo">Smart Donation System</h1>
       </div>
       <ul className="nav-links">
-        {!token ? ( // Show Signup and Login only if user is not logged in
+        {!token ? (
           <>
             <li>
               <Link to="/signup">Signup</Link>
@@ -29,11 +34,18 @@ function Navbar() {
             </li>
           </>
         ) : (
-          <li>
-            <button onClick={handleLogout} className="logout-btn">
-              Logout
-            </button>
-          </li>
+          <>
+            <li>
+              <button onClick={goToPreviousDonations} className="nav-btn">
+                Previous Donations
+              </button>
+            </li>
+            <li>
+              <button onClick={handleLogout} className="logout-btn">
+                Logout
+              </button>
+            </li>
+          </>
         )}
       </ul>
     </nav>
